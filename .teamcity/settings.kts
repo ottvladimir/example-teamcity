@@ -51,7 +51,7 @@ object Build : BuildType({
             runnerArgs = "-Dmaven.test.failure.ignore=true"
         }
         maven {
-            name = "Build & test"
+            name = "Build test"
 
             conditions {
                 doesNotContain("teamcity.build.branch", "master")
